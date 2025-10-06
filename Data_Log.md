@@ -126,6 +126,9 @@ WHERE
 
 When end_station_id is null:
 * The average trip_duration is  2377.49 seconds
-* The modal trip duration is 0 seconds 
-2944	2944	0	484	0
+* The modal trip duration is 0 seconds
+* There were 484 distinct station names for start stations
+* There were 0 distinct station names for end stations
+
+Because stations that lack both an end_station_name and end_station_id repesent incomplete trips, these trips will be dropped from the analysis.
 
